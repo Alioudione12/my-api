@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "21.1.0",
+    "npm": "10.2.3"
+    },
   "scripts": {
     "start:dev": "nodemon",
     "build": "npm install && rimraf ./build && tsc",
