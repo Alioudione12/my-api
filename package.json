@@ -1,16 +1,16 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "api app",
   "main": "index.js",
   "engines": {
-    "node": "21.1.0",
-    "npm": "10.2.3"
-    },
+    "node": "20.x"
+  },
   "scripts": {
     "start:dev": "nodemon",
     "build": "npm install && rimraf ./build && tsc",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "heroku-postbuild": "ng build --prod"
   },
   "keywords": [],
   "author": "",
